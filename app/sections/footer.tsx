@@ -25,7 +25,7 @@ const Footer = () => {
     {
       name: "Email",
       icon: <IoMailOutline size={21} />,
-      link: "mailto:",
+      link: "mailto:product@arccoonsoles.com",
     },
   ];
 
