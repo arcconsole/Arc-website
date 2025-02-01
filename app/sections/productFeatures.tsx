@@ -39,12 +39,12 @@ const ProductFeatures = () => {
     },
   ];
   return (
-    <div className="pl-5 lg:px-32 max-w-[90vw] mx-auto flex flex-col md:flex-row w-full justify-between items-center text-black">
-      <div className="felx flex-col space-y-16 justify-center items-center w-full md:w-1/2 p-8">
-        <h1 className="text-xl md:text-3xl md:text-nowrap font-ethnocentric uppercase">
+    <div className="max-w-[90vw] mx-auto flex flex-col md:flex-row w-full justify-between items-center text-black">
+      <div className="felx flex-col space-y-16 justify-center items-center w-full md:w-1/2 p-8 px-0">
+        <h1 className="text-xl md:text-3xl md:text-nowrap font-ethnocentric uppercase text-center">
           Product Features
         </h1>
-        <div className="relative max-w-7xl w-full mx-auto">
+        <div className="relative w-full mx-auto">
           <div className="absolute left-1/2 top-[32px] w-[2px] h-[calc(100%-85px)] bg-[#121212]" />
 
           <div className="space-y-8">

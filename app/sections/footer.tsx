@@ -66,15 +66,18 @@ const Footer = () => {
 
   return (
     <footer className="px-8 w-full ">
-      <div className="bg-[#161616] w-full rounded-t-xl flex justify-between p-5">
-        <Image
-          src={"/arc-logo-white.png"}
-          height={50}
-          width={100}
-          alt="ARC Logo"
-          className="cursor-pointer object-contain"
-        ></Image>
-        <div className="py-8 grid grid-flow-col grid-rows-2 gap-3 gap-x-24 font-poppins items-center justify-center">
+      <div className="bg-[#161616] w-full rounded-t-3xl flex justify-between items-center p-5">
+        <div className="p-4 pt-8">
+          <Image
+            src={"/arc-logo-white.png"}
+            height={50}
+            width={100}
+            alt="ARC Logo"
+            className="cursor-pointer object-contain"
+          ></Image>
+        </div>
+
+        <div className="py-10 grid grid-flow-col grid-rows-2 gap-3 gap-x-24 font-poppins items-center justify-center">
           {otherLinks.map((link, index) => (
             <Link
               key={index}
@@ -85,7 +88,7 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-        <div className="flex flex-col gap-5 items-end text-white">
+        <div className="flex flex-col gap-5 items-end justify-center text-white">
           <div className="flex  space-x-4">
             {socials.map((social, index) => (
               <Link

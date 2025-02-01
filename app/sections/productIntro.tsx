@@ -41,7 +41,7 @@ const ProductIntro = () => {
         <h1 className="font-poppins-medium text-xl">
           Play any Game on any Platform
         </h1>
-        <div className="flex items-center justify-center gap-8 w-full">
+        <div className="flex items-center justify-center gap-24 w-full">
           {images.map((image, index) => (
             <Image
               key={index}
@@ -49,7 +49,7 @@ const ProductIntro = () => {
               height={250}
               width={250}
               alt="ARC Logo"
-              className="object-contain h-10"
+              className="object-contain h-12"
               draggable={false}
             ></Image>
           ))}
