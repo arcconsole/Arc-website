@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Footer from "./sections/footer";
+import ProductIntro from "./sections/productIntro";
+import AdditionalFetures from "./sections/additionalFetures";
 
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen">
-        <Footer />
-      </div>
+      <ProductIntro />
+      <AdditionalFetures />
+      <Footer />
     </>
   );
 }

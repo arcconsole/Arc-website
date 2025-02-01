@@ -8,6 +8,12 @@ const poppins = localFont({
   weight: "100 900",
 });
 
+const poppinsMedium = localFont({
+  src: "./fonts/Poppins-Medium.ttf",
+  variable: "--font-poppins-medium",
+  weight: "500",
+});
+
 const Ethnocentric = localFont({
   src: "./fonts/Ethnocentric-Rg.otf",
   variable: "--font-ethnocentric",
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${poppins.variable} ${Ethnocentric.variable} antialiased`}
+        className={` ${poppins.variable} ${Ethnocentric.variable} ${poppinsMedium.variable} antialiased`}
       >
         {children}
       </body>

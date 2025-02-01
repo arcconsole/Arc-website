@@ -58,6 +58,7 @@ const config: Config = {
 			},
 			fontFamily: {
 				'poppins': 'var(--font-poppins)',
+				'poppins-medium': 'var(--font-poppins-medium)',
 				'ethnocentric': 'var(--font-ethnocentric)'
 			},
 		}
