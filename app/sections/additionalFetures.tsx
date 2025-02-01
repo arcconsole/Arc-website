@@ -68,7 +68,7 @@ const AdditionalFetures = () => {
       ></Image>
       <Button
         variant={"outline"}
-        className="absolute bottom-20 right-20 rounded-full capitalize text-xl py-6 border-[#161616] hover:bg-[#161616] hover:text-white"
+        className="absolute bottom-20 right-20 rounded-full capitalize text-xl py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
       >
         Join the waitlist
       </Button>

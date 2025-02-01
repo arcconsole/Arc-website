@@ -31,7 +31,7 @@ const ProductIntro = () => {
           ></Image>
           <Button
             variant={"outline"}
-            className="bg-transparent rounded-full capitalize text-xl py-6 border-white float-end"
+            className="bg-transparent rounded-full capitalize text-xl py-6 border-white float-end font-poppins"
           >
             Join the waitlist
           </Button>
