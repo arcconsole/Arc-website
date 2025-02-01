@@ -16,7 +16,7 @@ const links = ["Products", "Downloads", "Community", "Service"];
 
 export default function NavBar() {
   return (
-    <header className="fixed backdrop-blur top-0 z-50 w-full bg-transparent">
+    <header className="fixed  top-0 z-50 w-full bg-transparent">
       <div className="container mx-auto flex h-20 max-w-[94vw] items-center justify-between px-4 md:px-6">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
           <Image
@@ -24,7 +24,6 @@ export default function NavBar() {
             alt="Acme Inc"
             width={40}
             height={40}
-            className="rounded-full"
           ></Image>
           <span className="sr-only">Acme Inc</span>
         </Link>

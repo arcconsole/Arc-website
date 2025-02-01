@@ -55,7 +55,7 @@ const ProductIntro = () => {
             ></Image>
           ))}
         </div> */}
-        <Marquee>
+        <Marquee className="">
           <div className="flex items-center justify-center gap-24 w-full">
             {images.map((image, index) => (
               <Image

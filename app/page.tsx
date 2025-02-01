@@ -7,13 +7,13 @@ import NavBar from "./sections/navBar";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <NavBar />
       <Hero />
       <ProductIntro />
       <ProductFeatures />
       <AdditionalFetures />
       <Footer />
-    </>
+    </div>
   );
 }
