@@ -70,7 +70,7 @@ const Hero = () => {
           variant={"outline"}
           className="rounded-full capitalize text-xl py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
         >
-          Join the waitlist
+          Join the tribe
         </Button>
       </div>
       <motion.div
@@ -95,9 +95,9 @@ const Hero = () => {
       <DotPattern
         width={20}
         height={20}
-        cx={1}
-        cy={1}
-        cr={1}
+        cx={1.5}
+        cy={1.5}
+        cr={1.5}
         className={cn(
           "[mask-image:linear-gradient(to_bottom,white,transparent,transparent)] "
         )}

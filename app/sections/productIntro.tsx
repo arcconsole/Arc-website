@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 const ProductIntro = () => {
   const images = ["/luna.png", "/bosteroid.png", "/gamepass.png", "/psnow.png"];
@@ -33,15 +34,15 @@ const ProductIntro = () => {
             variant={"outline"}
             className="bg-transparent rounded-full capitalize text-xl py-6 border-white float-end font-poppins"
           >
-            Join the waitlist
+            Join the tribe
           </Button>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-3">
+      <div className="flex flex-col items-center justify-center gap-5">
         <h1 className="font-poppins-medium text-xl">
           Play any Game on any Platform
         </h1>
-        <div className="flex items-center justify-center gap-24 w-full">
+        {/* <div className="flex items-center justify-center gap-24 w-full">
           {images.map((image, index) => (
             <Image
               key={index}
@@ -53,7 +54,35 @@ const ProductIntro = () => {
               draggable={false}
             ></Image>
           ))}
-        </div>
+        </div> */}
+        <Marquee>
+          <div className="flex items-center justify-center gap-24 w-full">
+            {images.map((image, index) => (
+              <Image
+                key={index}
+                src={image}
+                height={250}
+                width={250}
+                alt="ARC Logo"
+                className="object-contain h-12"
+                draggable={false}
+              ></Image>
+            ))}
+          </div>
+          <div className="flex items-center justify-center gap-24 w-full">
+            {images.map((image, index) => (
+              <Image
+                key={index}
+                src={image}
+                height={250}
+                width={250}
+                alt="ARC Logo"
+                className="object-contain h-12"
+                draggable={false}
+              ></Image>
+            ))}
+          </div>
+        </Marquee>
       </div>
     </div>
   );
