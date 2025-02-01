@@ -70,7 +70,7 @@ const Hero = () => {
           variant={"outline"}
           className="rounded-full capitalize text-xl py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
         >
-          Join the tribe
+          Join the tribe !!
         </Button>
       </div>
       <motion.div
