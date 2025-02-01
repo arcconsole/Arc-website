@@ -78,6 +78,9 @@ const Hero = () => {
       // initial={{ y: 10 }}
       // transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
       >
+        <div className="absolute top-1/2 left-1/2 -translate-x-[30%] -translate-y-[28%] w-full font-ethnocentric text-[9rem] text-[#DEDEDE] z-[-1]">
+          arc nemo
+        </div>
         <Image
           src="/hero-image.png"
           alt="Hero Image"
