@@ -46,10 +46,10 @@ const Hero = () => {
               />
             </svg>
           </span>
-          Designed for Gamer.
+          Gaming Redefined.
         </div>
         <div className="flex items-center justify-center space-x-4 relative">
-          Powered by Innovation.
+          Play More.
           <span className="absolute right-0 translate-x-24">
             <svg
               width="83"
@@ -65,7 +65,7 @@ const Hero = () => {
             </svg>
           </span>
         </div>
-        <div>Built Around You.</div>
+        <div>Play Better. </div>
         <Button
           variant={"outline"}
           className="rounded-full capitalize text-xl py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
