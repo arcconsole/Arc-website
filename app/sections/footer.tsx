@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaDiscord } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 
@@ -16,6 +16,12 @@ const Footer = () => {
       name: "Instagram",
       icon: <FaInstagram size={21} />,
       link: "https://www.instagram.com/arctheagency/",
+    },
+    {
+      //discord
+      name: "Discord",
+      icon: <FaDiscord size={21} />,
+      link: "https://discord.gg/arc",
     },
     {
       name: "Twitter",
@@ -89,7 +95,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="flex flex-col gap-5 items-end justify-center text-white">
-          <div className="flex  space-x-4">
+          <div className="flex  space-x-5">
             {socials.map((social, index) => (
               <Link
                 key={index}

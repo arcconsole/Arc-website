@@ -1,24 +1,33 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
 const ProductIntro = () => {
-  const images = ["/luna.png", "/bosteroid.png", "/gamepass.png", "/psnow.png"];
+  const images = [
+    "/luna.png",
+    "/bosteroid.png",
+    "/gamepass.png",
+    "/psnow.png",
+    "/steam-link.png",
+    "/jio-games.png",
+    "/geforce.png",
+  ];
   return (
     <div className="space-y-20">
-      <div className="container max-w-7xl bg-[#161616] text-white mx-auto rounded-xl p-20 pt-32  pl-32 flex justify-between gap-32">
+      <div className="container max-w-7xl bg-[#161616] text-white mx-auto rounded-3xl p-20 py-24  pl-24 flex justify-between gap-32">
         <div className="space-y-16 w-3/4">
           <h1 className="font-ethnocentric text-4xl ">arc nemo</h1>
           <p className="font-poppins text-xl leading-relaxed">
-            Dive into an immersive gaming experience with{" "}
-            <span className="font-poppins-medium">Arc Nemo</span>, the console
-            designed to seamlessly blend stunning visuals and lightning-fast
-            performance.
+            Best-in-class native Android gaming handheld console powered by
+            <strong className="font-poppins-medium mx-1">
+              Snapdragon 8Gen2
+            </strong>
+            , built for gamers who demand nothing short of excellence.
           </p>
           <p className="font-poppins text-xl leading-relaxed">
-            Best in class native Android handheld console powered by{" "}
-            <span className="font-poppins-medium">Snapdragon 8 Gen 2</span>
+            Integrating cutting-edge hardware with intuitive design to deliver
+            an unmatched portable gaming experience where premium craftsmanship
+            meets limitless possibilities.
           </p>
         </div>
         <div className="space-y-20">
@@ -30,12 +39,6 @@ const ProductIntro = () => {
             className=" object-contain"
             draggable={false}
           ></Image>
-          <Button
-            variant={"outline"}
-            className="bg-transparent rounded-full capitalize text-xl py-6 border-white float-end font-poppins"
-          >
-            Join the tribe
-          </Button>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-5">

@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
 
@@ -17,8 +16,8 @@ const AdditionalFetures = () => {
     },
     {
       icon: <ScreenSVG />,
-      title: '7" 1080P Screen',
-      description: "16:9",
+      title: "6.5’’ 120Hz",
+      description: "bezel-less screen, 16:9",
     },
     {
       icon: <BatterySVG />,
@@ -52,7 +51,7 @@ const AdditionalFetures = () => {
             {feature.icon}
 
             <div className="flex flex-col text-center font-poppins">
-              <h2 className="">{feature.title}</h2>
+              <h2 className="font-poppins-medium text-lg">{feature.title}</h2>
               <p>{feature.description}</p>
             </div>
           </div>
@@ -66,12 +65,6 @@ const AdditionalFetures = () => {
         className=" object-contain max-w-[95vw] mx-auto"
         draggable={false}
       ></Image>
-      <Button
-        variant={"outline"}
-        className="absolute bottom-20 right-20 rounded-full capitalize text-xl py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
-      >
-        Join the tribe
-      </Button>
     </div>
   );
 };

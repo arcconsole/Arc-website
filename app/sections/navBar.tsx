@@ -12,7 +12,7 @@ import { SVGProps } from "react";
 import Image from "next/image";
 import { Search, ShoppingCart, User } from "lucide-react";
 
-const links = ["Products", "Downloads", "Community", "Service"];
+const links = ["Overview", "Community", "Support", "Forum"];
 
 export default function NavBar() {
   return (

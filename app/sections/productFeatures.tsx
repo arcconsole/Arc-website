@@ -24,18 +24,15 @@ const ProductFeatures = () => {
     },
     {
       title: "Haptics",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      description: `Experience unmatched immersive feedback and precision with in-house ARC XP-717 haptic motor.`,
     },
     {
       title: "Retro Game\nEmulation",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      description: `Enjoy authentic retro gaming, an integrated cloud solution offering an exclusive indie game library.`,
     },
     {
       title: "Portability",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      description: `Plug and play your consoles and other libraries anytime anywhere`,
     },
   ];
   return (
