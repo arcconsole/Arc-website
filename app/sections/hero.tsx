@@ -6,6 +6,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { MoveUpRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -18,9 +19,9 @@ const Hero = () => {
         </div>
         <Button
           variant={"outline"}
-          className="rounded-full capitalize text-xl py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
+          className="rounded-[1.2rem] capitalize text-xl py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
         >
-          Join the tribe !!
+          Join the tribe <MoveUpRight size={36} />
         </Button>
       </div>
       <motion.div

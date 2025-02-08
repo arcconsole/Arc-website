@@ -27,7 +27,7 @@ export default function NavBar() {
           ></Image>
           <span className="sr-only">Acme Inc</span>
         </Link>
-        <nav className="hidden border-2 border-[#979797] items-center gap-6 text-sm font-medium md:flex bg-gradient-to-tr from-[#E8E8E8] to-[#D1D1D1] rounded-full p-3 px-8 space-x-8">
+        <nav className="hidden border-2 border-[#979797] items-center gap-6 text-sm font-medium md:flex bg-gradient-to-tr from-[#E8E8E8] to-[#D1D1D1] rounded-2xl p-3 px-24 space-x-8">
           {links.map((link) => (
             <Link
               key={link}
@@ -39,58 +39,12 @@ export default function NavBar() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-4 text-black">
-          <Toggle className="rounded-full">
-            <User />
-          </Toggle>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Search />
-                <span className="sr-only">Search</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-[300px] p-4">
-              <div className="relative">
-                <Search />
-                <Input
-                  type="search"
-                  placeholder="Search..."
-                  className="pl-8 w-full"
-                />
-              </div>
-            </DropdownMenuContent>
-          </DropdownMenu>
-          <Toggle className="rounded-full">
-            <ShoppingCart />
-          </Toggle>
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="rounded-full md:hidden"
-              >
-                <MenuIcon className="h-5 w-5  dark:text-gray-400" />
-                <span className="sr-only">Toggle navigation menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="md:hidden">
-              <div className="grid gap-4 p-4">
-                {links.map((link) => (
-                  <Link
-                    key={link}
-                    href="#"
-                    className="text-sm font-medium  hover:text-gray-900 text-black"
-                    prefetch={false}
-                  >
-                    {link}
-                  </Link>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
+        <Button
+          variant={"outline"}
+          className="rounded-[1.2rem] capitalize text-lg py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
+        >
+          Join the tribe
+        </Button>
       </div>
     </header>
   );
