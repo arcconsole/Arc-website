@@ -1,20 +1,14 @@
+"use client";
 import Link from "next/link";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-} from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Toggle } from "@/components/ui/toggle";
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
-import { SVGProps } from "react";
 import Image from "next/image";
-import { Search, ShoppingCart, User } from "lucide-react";
+import WaitlistDialog from "@/components/ui/wait-list-dialog";
+import { useState } from "react";
 
 const links = ["Overview", "Community", "Support", "Forum"];
 
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="fixed  top-0 z-50 w-full bg-transparent">
       <div className="container mx-auto flex h-20 max-w-[94vw] items-center justify-between px-4 md:px-6">
@@ -40,33 +34,14 @@ export default function NavBar() {
           ))}
         </nav>
         <Button
+          onClick={() => setIsOpen(true)}
           variant={"outline"}
           className="rounded-[1.2rem] capitalize text-lg py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
         >
           Join the tribe
         </Button>
       </div>
+      <WaitlistDialog isOpen={isOpen} setIsOpen={setIsOpen} />
     </header>
-  );
-}
-
-function MenuIcon(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <line x1="4" x2="20" y1="12" y2="12" />
-      <line x1="4" x2="20" y1="6" y2="6" />
-      <line x1="4" x2="20" y1="18" y2="18" />
-    </svg>
   );
 }
