@@ -21,7 +21,7 @@ const Footer = () => {
       //discord
       name: "Discord",
       icon: <FaDiscord size={21} />,
-      link: "https://discord.gg/arc",
+      link: "https://discord.gg/KzaVeEgcVQ",
     },
     {
       name: "Twitter",
