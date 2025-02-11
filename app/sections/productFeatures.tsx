@@ -19,15 +19,31 @@ const ProductFeatures = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const items: TimelineItem[] = [
+  const features = [
     {
       title: "Operating System",
-      description: "**Owl OS** for seamless gaming experience\nPowered by Owl",
+      description: (
+        <>
+          <span className="font-bold font-poppins-medium text-lg text-black">
+            Owl OS
+          </span>{" "}
+          for seamless gaming experience
+          <br />
+          Powered by Owl
+        </>
+      ),
     },
     {
       title: "Haptics",
-      description:
-        "Experience unmatched immersive feedback and precision with in-house **ARC XP-717** haptic motor.",
+      description: (
+        <>
+          Experience unmatched immersive feedback and precision with in-house{" "}
+          <span className="font-bold font-poppins-medium text-lg text-black">
+            ARC XP-717
+          </span>{" "}
+          haptic motor.
+        </>
+      ),
     },
     {
       title: "Arc Universe",
@@ -37,79 +53,60 @@ const ProductFeatures = () => {
     {
       title: "Portability",
       description:
-        "Plug and play your consoles and other libraries anytime anywhere.",
+        "Plug and play your consoles and other libraries anytime anywhere",
     },
   ];
 
   return (
-    <div className="max-w-[90vw] mx-auto flex flex-col md:flex-row w-full justify-between items-center text-black">
-      <div className="flex flex-col space-y-16 justify-center items-center w-full md:w-1/2 p-8 px-0">
+    <div className="max-w-[90vw] mx-auto flex flex-col lg:flex-row w-full justify-between items-center text-black">
+      <div className="flex flex-col space-y-16 justify-center items-center w-full lg:w-1/2 p-8 px-0">
         <h1 className="text-xl md:text-3xl md:text-nowrap font-bold uppercase font-ethnocentric text-center">
           Product Features
         </h1>
-        {/* Timeline Line */}
-        <div className="relative w-full mx-auto">
-          <div className="absolute left-1/2 top-[8px] w-[2px] h-[calc(100%-10px)] bg-gray-500 transform -translate-x-1/2" />
+        <div className="max-w-2xl mx-auto p-8 ">
+          <div className="relative">
+            {/* Vertical line */}
+            <div className="absolute left-1/3 top-0 bottom-0 w-px bg-[#161616]" />
 
-          <div className="space-y-8">
-            {items.map((item, index) => (
-              <motion.div
-                key={item.title}
-                className="relative flex items-center gap-6"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2 }}
-                onMouseEnter={() => setActiveIndex(index)}
-              >
-                {/* Left side - Title */}
-                <div className="flex-1 text-right">
-                  <h3
-                    className={`text-base md:text-lg font-semibold transition-colors duration-200 ${
-                      index === activeIndex ? "text-black" : "text-gray-600"
-                    }`}
-                  >
-                    {item.title}
-                  </h3>
-                </div>
-
-                {/* Center - Timeline dot */}
-                <div className="relative">
-                  <div
-                    className={cn(
-                      `w-3 h-3 rounded-full border-2 border-white bg-gray-900 transition-all duration-200 transform`,
-                      index === activeIndex ? "h-8 w-2 bg-black" : "h-3 w-3"
-                    )}
+            <div className="space-y-20">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="relative grid grid-cols-[120px,1fr] gap-32"
+                >
+                  {/* Dot */}
+                  <motion.div
+                    animate={{
+                      height: activeIndex === index ? 32 : 9,
+                      backgroundColor:
+                        activeIndex === index ? "##8C8C8C" : "#161616",
+                    }}
+                    className="absolute left-1/3 -translate-x-[3px] top-[1px] w-[8px] h-[8px] rounded-full bg-black"
                   />
-                </div>
 
-                {/* Right side - Description */}
-                <div className="flex-1">
-                  <motion.p
-                    className="text-sm md:text-lg text-gray-700 whitespace-pre-line"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: index === activeIndex ? 1 : 0 }}
-                    transition={{ duration: 0.2 }}
+                  {/* Title */}
+                  <div className="text-lg font-bold text-nowrap font-poppins-medium">
+                    {feature.title}
+                  </div>
+
+                  {/* Description */}
+                  <motion.div
+                    animate={{ opacity: activeIndex === index ? 1 : 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-gray-600 text-lg leading-relaxed"
                   >
-                    {item.description.split("**").map((part, i) =>
-                      i % 2 === 0 ? (
-                        part
-                      ) : (
-                        <strong key={i} className="font-bold">
-                          {part}
-                        </strong>
-                      )
-                    )}
-                  </motion.p>
+                    {feature.description}
+                  </motion.div>
                 </div>
-              </motion.div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
       <Image
         src="/features-image.png"
         alt="Features Image"
-        className="hidden md:block"
+        className="hidden lg:block"
         width={350}
         height={350}
         draggable={false}
