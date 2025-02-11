@@ -10,12 +10,11 @@ import { MoveUpRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen relative grid place-content-center">
-      <div className="mt-60 flex flex-col items-center justify-center font-poppins-medium text-5xl text-center space-y-6">
-        <div>
-          Gaming Redefined.
-          <br />
-          Play More. Play Better.
+    <div className="min-h-screen relative grid place-content-center mb-16">
+      <div className="mt-60 mb-8 flex flex-col items-center justify-center font-poppins-medium text-5xl text-center space-y-16">
+        <div className="space-y-6 text-6xl">
+          <p>Gaming Redefined.</p>
+          <p> Play More. Play Better.</p>
         </div>
         <Button
           variant={"outline"}
@@ -25,20 +24,21 @@ const Hero = () => {
         </Button>
       </div>
       <motion.div
-      // animate={{ y: 0 }}
-      // initial={{ y: 10 }}
-      // transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
+        // animate={{ y: 0 }}
+        // initial={{ y: 10 }}
+        // transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
+        className="flex items-center justify-center w-full h-full"
       >
-        <div className="absolute top-1/2 left-1/2 -translate-x-[30%] -translate-y-[28%] w-full font-ethnocentric text-[9rem] text-[#DEDEDE] z-[-1]">
+        <div className="absolute top-1/2 left-1/2 -translate-x-[28%] -translate-y-[20%] w-full font-ethnocentric text-[9rem] text-[#DEDEDE] z-[-1] ">
           arc nemo
         </div>
         <Image
           src="/hero-image.png"
           alt="Hero Image"
-          height={800}
-          width={1200}
+          height={1200}
+          width={1300}
           objectFit="cover"
-          className="object-cover mx-auto"
+          className="object-cover "
           draggable={false}
         />
       </motion.div>

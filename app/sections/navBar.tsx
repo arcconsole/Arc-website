@@ -3,14 +3,37 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import WaitlistDialog from "@/components/ui/wait-list-dialog";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const links = ["Overview", "Community", "Support", "Forum"];
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY.current) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+      lastScrollY.current = currentScrollY;
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed  top-0 z-50 w-full bg-transparent">
+    <header
+      className="fixed top-0 z-50 w-full bg-transparent"
+      style={{
+        transform: showNavbar ? "translateY(0)" : "translateY(-100%)",
+        transition: "transform 0.3s ease-in-out",
+      }}
+    >
       <div className="container mx-auto flex h-20 max-w-[94vw] items-center justify-between px-4 md:px-6">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
           <Image

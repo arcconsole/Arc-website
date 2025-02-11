@@ -44,11 +44,11 @@ const ProductFeatures = () => {
   return (
     <div className="max-w-[90vw] mx-auto flex flex-col md:flex-row w-full justify-between items-center text-black">
       <div className="flex flex-col space-y-16 justify-center items-center w-full md:w-1/2 p-8 px-0">
-        <h1 className="text-xl md:text-3xl md:text-nowrap font-bold uppercase text-center">
+        <h1 className="text-xl md:text-3xl md:text-nowrap font-bold uppercase font-ethnocentric text-center">
           Product Features
         </h1>
+        {/* Timeline Line */}
         <div className="relative w-full mx-auto">
-          {/* Timeline Line */}
           <div className="absolute left-1/2 top-[8px] w-[2px] h-[calc(100%-10px)] bg-gray-500 transform -translate-x-1/2" />
 
           <div className="space-y-8">
