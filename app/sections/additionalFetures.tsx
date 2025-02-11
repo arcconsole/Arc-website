@@ -10,11 +10,6 @@ interface FeatureProps {
 const AdditionalFetures = () => {
   const features: FeatureProps[] = [
     {
-      icon: <DeviceSVG />,
-      title: "Remote Play",
-      description: "Your PC/PS/XBOX",
-    },
-    {
       icon: <ScreenSVG />,
       title: "6.5’’ 120Hz",
       description: "bezel-less screen, 16:9",
@@ -30,14 +25,19 @@ const AdditionalFetures = () => {
       description: "Joysticks",
     },
     {
-      icon: <WeightSVG />,
-      title: "Lightweight",
-      description: "430g",
-    },
-    {
       icon: <GyroSVG />,
       title: "Gyro",
       description: "Supported",
+    },
+    {
+      icon: <DeviceSVG />,
+      title: "Remote Play",
+      description: "Your PC/PS/XBOX",
+    },
+    {
+      icon: <WeightSVG />,
+      title: "Lightweight",
+      description: "430g",
     },
   ];
   return (

@@ -5,6 +5,7 @@ import Image from "next/image";
 import WaitlistDialog from "@/components/ui/wait-list-dialog";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { MoveUpRight } from "lucide-react";
 
 const links = ["Overview", "Community", "Support", "Forum"];
 
@@ -59,9 +60,9 @@ export default function NavBar() {
         <Button
           onClick={() => setIsOpen(true)}
           variant={"outline"}
-          className="rounded-[1.2rem] capitalize text-lg py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
+          className="rounded-[1.2rem] capitalize text-xl py-6 border-2 text-black border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
         >
-          Join the tribe
+          Join the tribe <MoveUpRight size={36} />
         </Button>
       </div>
       <WaitlistDialog isOpen={isOpen} setIsOpen={setIsOpen} />
