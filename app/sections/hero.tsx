@@ -29,7 +29,7 @@ const Hero = () => {
         // transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
         className="flex items-center justify-center w-full h-full"
       >
-        <div className="absolute top-1/2 left-1/2 -translate-x-[28%] -translate-y-[20%] w-full font-ethnocentric text-[9rem] text-[#DEDEDE] z-[-1] ">
+        <div className="absolute top-1/2 left-1/2 -translate-x-[28%] -translate-y-[24%] w-full font-ethnocentric text-[9rem] text-[#DEDEDE] z-[-1] ">
           arc nemo
         </div>
         <Image
