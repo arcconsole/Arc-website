@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 import { GridPattern } from "./grid-pattern";
 import { Button } from "./button";
 import { FaDiscord } from "react-icons/fa";
-import { useRouter } from "next/navigation";
 const WaitlistDialog = ({
   isOpen,
   setIsOpen,
@@ -56,8 +55,6 @@ const WaitlistDialog = ({
         console.error("Error submitting form", err);
       });
   };
-
-  const router = useRouter();
 
   return (
     <>
