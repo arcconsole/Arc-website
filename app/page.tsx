@@ -7,7 +7,7 @@ import NavBar from "./sections/navBar";
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden relative">
       <NavBar />
       <Hero />
       <ProductIntro />

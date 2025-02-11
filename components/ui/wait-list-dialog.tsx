@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { GridPattern } from "./grid-pattern";
 import { Button } from "./button";
 import { FaDiscord } from "react-icons/fa";
-
+import { useRouter } from "next/navigation";
 const WaitlistDialog = ({
   isOpen,
   setIsOpen,
@@ -56,6 +56,8 @@ const WaitlistDialog = ({
         console.error("Error submitting form", err);
       });
   };
+
+  const router = useRouter();
 
   return (
     <>
@@ -201,8 +203,15 @@ const WaitlistDialog = ({
                   out the latest updates. Join our Discord.
                 </p>
               </div>
+
               <Button
-                onClick={handelFormSubmit}
+                onClick={() =>
+                  window.open(
+                    "https://discord.gg/KzaVeEgcVQ",
+                    "_blank",
+                    "noopener noreferrer"
+                  )
+                }
                 variant={"outline"}
                 className="rounded-[1.2rem] capitalize text-lg py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins-medium border-2"
               >

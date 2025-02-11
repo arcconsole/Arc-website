@@ -3,12 +3,16 @@
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MoveUpRight } from "lucide-react";
+import WaitlistDialog from "@/components/ui/wait-list-dialog";
+import BottumRightButtons from "@/components/bottum-right-buttons";
 
 const Hero = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="min-h-screen relative grid place-content-center mb-16">
       <div className="mt-60 mb-8 flex flex-col items-center justify-center font-poppins-medium text-5xl text-center space-y-16">
@@ -17,6 +21,7 @@ const Hero = () => {
           <p> Play More. Play Better.</p>
         </div>
         <Button
+          onClick={() => setIsOpen(true)}
           variant={"outline"}
           className="rounded-[1.2rem] capitalize text-xl py-6 border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
         >
@@ -29,7 +34,7 @@ const Hero = () => {
         // transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
         className="flex items-center justify-center w-full h-full"
       >
-        <div className="absolute top-1/2 left-1/2 -translate-x-[28%] -translate-y-[24%] w-full font-ethnocentric text-[9rem] text-[#DEDEDE] z-[-1] ">
+        <div className="absolute top-1/2 left-1/2 -translate-x-[28%] -translate-y-[28%] w-full font-ethnocentric text-[9rem] text-[#DEDEDE] z-[-1] ">
           arc nemo
         </div>
         <Image
@@ -53,6 +58,8 @@ const Hero = () => {
           "[mask-image:linear-gradient(to_bottom,white,transparent,transparent)] "
         )}
       />
+      <WaitlistDialog isOpen={isOpen} setIsOpen={setIsOpen} />
+      <BottumRightButtons />
     </div>
   );
 };

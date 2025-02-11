@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import WaitlistDialog from "@/components/ui/wait-list-dialog";
 import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 const links = ["Overview", "Community", "Support", "Forum"];
 
@@ -27,12 +28,11 @@ export default function NavBar() {
   }, []);
 
   return (
-    <header
+    <motion.header
       className="fixed top-0 z-50 w-full bg-transparent"
-      style={{
-        transform: showNavbar ? "translateY(0)" : "translateY(-100%)",
-        transition: "transform 0.3s ease-in-out",
-      }}
+      initial={{ y: -100 }}
+      animate={{ y: showNavbar ? 0 : -100 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
     >
       <div className="container mx-auto flex h-20 max-w-[94vw] items-center justify-between px-4 md:px-6">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
@@ -65,6 +65,6 @@ export default function NavBar() {
         </Button>
       </div>
       <WaitlistDialog isOpen={isOpen} setIsOpen={setIsOpen} />
-    </header>
+    </motion.header>
   );
 }

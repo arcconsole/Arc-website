@@ -2,12 +2,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-
-interface TimelineItem {
-  title: string;
-  description: string;
-}
 
 const ProductFeatures = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -28,8 +22,6 @@ const ProductFeatures = () => {
             Owl OS
           </span>{" "}
           for seamless gaming experience
-          <br />
-          Powered by Owl
         </>
       ),
     },
@@ -48,7 +40,7 @@ const ProductFeatures = () => {
     {
       title: "Arc Universe",
       description:
-        "Enjoy authentic retro gaming, an integrated cloud solution offering an exclusive indie game library.",
+        "Enjoy authentic retro gaming, an integrated cloud solution offering an exclusive indie game library.",
     },
     {
       title: "Portability",
