@@ -108,7 +108,7 @@ const Footer = () => {
             ))}
           </div>
           <p className="text-right font-poppins">
-            @2025 Arc Console <br /> Stryker interactive Technologies pvt ltd
+            @2025 Arc Console <br /> Stryker Interactive Technologies Pvt Ltd
             <br />
             All rights reserved.
           </p>
