@@ -18,6 +18,7 @@ const WaitlistDialog = ({
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const formRef = React.useRef<HTMLFormElement>(null!);
+  const [countryCode, setCountryCode] = useState("+91");
 
   const handleClose = () => {
     setIsOpen(false);
@@ -44,7 +45,7 @@ const WaitlistDialog = ({
     const referral_link = document.URL;
     const data = {
       // name: formData.get("name"),
-      // phone: formData.get("phone"),
+      phone: countryCode + formData.get("phone"),
       email: formData.get("email"),
       waitlist_id: waitlist_id,
       referral_link: referral_link,
@@ -73,9 +74,10 @@ const WaitlistDialog = ({
         data
       );
       console.log("response", response);
-      setTimeout(() => {
-        setIsFlipped(true);
-      }, 700);
+      // setTimeout(() => {
+      //   setIsFlipped(true);
+      // }, 700);
+      setIsOpen(false);
     } catch (error) {
       console.error("Error submitting form", error);
     }
@@ -136,24 +138,37 @@ const WaitlistDialog = ({
               </div>
               <div className="w-full sm:w-3/5 px-4 sm:px-32 p-4 sm:p-8 rounded-3xl">
                 <form ref={formRef} className="space-y-6 relative">
-                  {/* Name Input */}
-                  {/* <div>
-                    <Input
-                      name="name"
-                      type="text"
-                      placeholder="Name"
-                      className="w-full h-12 px-4 py-3 bg-gradient-to-tr from-[#E8E8E8] to-[#D1D1D1] text-black placeholder-gray-400 border border-[#979797] rounded-full focus:ring-2 focus:ring-purple-500 focus:outline-none"
-                    />
-                  </div> */}
-                  {/* Phone Number Input */}
-                  {/* <div>
+                  {/* Country Code Dropdown */}
+                  <div className="flex items-center gap-2">
+                    <select
+                      value={countryCode}
+                      onChange={(e) => setCountryCode(e.target.value)}
+                      className="h-12 px-4 py-3 bg-gradient-to-tr from-[#E8E8E8] to-[#D1D1D1] text-black border border-[#979797] rounded-full focus:ring-1 focus:ring-black focus:outline-none"
+                    >
+                      <option value="+91">+91 (India)</option>
+                      <option value="+1">+1 (USA)</option>
+                      <option value="+44">+44 (UK)</option>
+                      <option value="+61">+61 (Australia)</option>
+                      <option value="+81">+81 (Japan)</option>
+                      <option value="+49">+49 (Germany)</option>
+                      <option value="+33">+33 (France)</option>
+                      <option value="+39">+39 (Italy)</option>
+                      <option value="+34">+34 (Spain)</option>
+                      <option value="+82">+82 (South Korea)</option>
+                      <option value="+55">+55 (Brazil)</option>
+                      <option value="+7">+7 (Russia)</option>
+                      <option value="+86">+86 (China)</option>
+                      <option value="+65">+65 (Singapore)</option>
+                      <option value="+65">+65 (Singapore)</option>
+                      <option value="+60">+60 (Malaysia)</option>
+                    </select>
                     <Input
                       name="phone"
                       type="number"
                       placeholder="Phone Number"
-                      className="w-full h-12 px-4 py-3 bg-gradient-to-tr from-[#E8E8E8] to-[#D1D1D1] text-black placeholder-gray-400 border border-[#979797] rounded-full focus:ring-2 focus:ring-purple-500 focus:outline-none"
+                      className="w-full h-12 px-4 py-3 bg-gradient-to-tr from-[#E8E8E8] to-[#D1D1D1] text-black placeholder-gray-400 border border-[#979797] rounded-full focus:ring-1 focus:ring-black focus:outline-none"
                     />
-                  </div> */}
+                  </div>
                   {/* Email Input */}
                   <div>
                     <Input
