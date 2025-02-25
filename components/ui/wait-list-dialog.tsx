@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { GridPattern } from "./grid-pattern";
 import { Button } from "./button";
 import { FaDiscord } from "react-icons/fa";
+import axios from "axios";
 const WaitlistDialog = ({
   isOpen,
   setIsOpen,
@@ -23,37 +24,61 @@ const WaitlistDialog = ({
     setIsFlipped(false);
   };
 
-  const handelFormSubmit = (e: React.FormEvent) => {
+  const handelFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const formData = new FormData(formRef.current);
+    // const data = {
+    //   name: formData.get("name"),
+    //   phone: formData.get("phone"),
+    //   email: formData.get("email"),
+    // };
+
+    // const sheet_url = process.env.NEXT_PUBLIC_SHEET_URL;
+
+    // if (!sheet_url) {
+    //   console.error("Sheet URL not found");
+    //   return;
+    // }
+
+    const waitlist_id = process.env.NEXT_PUBLIC_WAITLIST_ID;
+    const referral_link = document.URL;
     const data = {
-      name: formData.get("name"),
-      phone: formData.get("phone"),
+      // name: formData.get("name"),
+      // phone: formData.get("phone"),
       email: formData.get("email"),
+      waitlist_id: waitlist_id,
+      referral_link: referral_link,
     };
+    console.log("data", data);
 
-    const sheet_url = process.env.NEXT_PUBLIC_SHEET_URL;
-    if (!sheet_url) {
-      console.error("Sheet URL not found");
-      return;
+    // fetch(sheet_url, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(data),
+    //   mode: "no-cors",
+    // })
+    //   .then(() => {
+    //     setTimeout(() => {
+    //       setIsFlipped(true);
+    //     }, 700);
+    //   })
+    //   .catch((err) => {
+    //     console.error("Error submitting form", err);
+    //   });
+    try {
+      const response = await axios.post(
+        process.env.NEXT_PUBLIC_WAITLIST_URL as string,
+        data
+      );
+      console.log("response", response);
+      setTimeout(() => {
+        setIsFlipped(true);
+      }, 700);
+    } catch (error) {
+      console.error("Error submitting form", error);
     }
-
-    fetch(sheet_url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-      mode: "no-cors",
-    })
-      .then(() => {
-        setTimeout(() => {
-          setIsFlipped(true);
-        }, 700);
-      })
-      .catch((err) => {
-        console.error("Error submitting form", err);
-      });
   };
 
   return (
@@ -112,23 +137,23 @@ const WaitlistDialog = ({
               <div className="w-full sm:w-3/5 px-4 sm:px-32 p-4 sm:p-8 rounded-3xl">
                 <form ref={formRef} className="space-y-6 relative">
                   {/* Name Input */}
-                  <div>
+                  {/* <div>
                     <Input
                       name="name"
                       type="text"
                       placeholder="Name"
                       className="w-full h-12 px-4 py-3 bg-gradient-to-tr from-[#E8E8E8] to-[#D1D1D1] text-black placeholder-gray-400 border border-[#979797] rounded-full focus:ring-2 focus:ring-purple-500 focus:outline-none"
                     />
-                  </div>
+                  </div> */}
                   {/* Phone Number Input */}
-                  <div>
+                  {/* <div>
                     <Input
                       name="phone"
                       type="number"
                       placeholder="Phone Number"
                       className="w-full h-12 px-4 py-3 bg-gradient-to-tr from-[#E8E8E8] to-[#D1D1D1] text-black placeholder-gray-400 border border-[#979797] rounded-full focus:ring-2 focus:ring-purple-500 focus:outline-none"
                     />
-                  </div>
+                  </div> */}
                   {/* Email Input */}
                   <div>
                     <Input
