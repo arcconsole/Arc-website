@@ -89,11 +89,11 @@ const Page = () => {
           <div className="absolute inset-0 bg-black bg-opacity-30 md:bg-opacity-40 rounded-b-xl"></div>
         </div>
 
-        <div className="flex flex-col items-center bg-transparent text-white rounded-lg px-4 w-full max-w-md mx-auto absolute bottom-8 md:bottom-1/2 md:translate-y-1/2 md:right-16 md:items-start md:max-w-lg">
+        <div className="flex flex-col items-center bg-transparent text-white rounded-lg px-4 w-full max-w-md mx-auto absolute bottom-6 md:bottom-[20%] md:translate-y-1/2 md:left-1/2 md:-translate-x-1/2 md:items-center md:max-w-xl md:text-center">
           <h2 className="text-3xl md:text-5xl font-gilmer mb-2 md:mb-4">
             Get early access
           </h2>
-          <p className="text-center md:text-left text-[hsla(0,0%,66%,1)] font-gilmer mb-4 text-lg md:text-xl leading-tight md:leading-relaxed md:max-w-md">
+          <p className="text-center md:text-center text-[hsla(0,0%,66%,1)] font-gilmer mb-4 text-lg md:text-2xl leading-tight md:leading-relaxed md:max-w-xl">
             Be amongst the first to experience wait and launch a viral waitlist.
             Signup to be notified when we launch.
           </p>
@@ -101,32 +101,34 @@ const Page = () => {
             <form
               ref={formRef}
               onSubmit={handleFormSubmit}
-              className="w-full p-2 bg-[hsla(0,0%,0%,0.25)] rounded-lg md:backdrop-blur-sm md:p-3 md:bg-[hsla(0,0%,0%,0.35)]"
+              className="w-full p-2 bg-[hsla(0,0%,0%,0.25)] rounded-lg md:backdrop-blur-sm md:p-3 md:bg-transparent"
             >
-              <Input
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full p-3 mb-2 rounded-md bg-transparent text-white placeholder-gray-500 border-none focus:outline-none focus:ring-0 focus:border-none"
-                required
-              />
+              <div className="flex flex-col md:flex-row items-center gap-2 md:gap-5">
+                <Input
+                  type="email"
+                  placeholder="name@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full md:flex-1 p-3 rounded-md bg-transparent text-white placeholder-white border border-gray-400 md:bg-[hsla(0,0%,0%,0.25)] h-full mb-2 md:mb-0"
+                  required
+                />
 
-              <Button
-                type="submit"
-                size={"sm"}
-                disabled={isSubmitting}
-                className="w-full bg-[hsla(81,100%,60%,1)] text-black hover:bg-[hsla(81,100%,60%,1)] rounded-xl md:py-6 md:text-lg group transition-all duration-300"
-              >
-                {isSubmitting
-                  ? "Submitting..."
-                  : isSuccess
-                  ? "Thank You!"
-                  : "Join Waitlist"}
-                {!isSubmitting && !isSuccess && (
-                  <MoveRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-                )}
-              </Button>
+                <Button
+                  type="submit"
+                  size={"sm"}
+                  disabled={isSubmitting}
+                  className="w-full md:flex-1 bg-[hsla(81,100%,60%,1)] text-black hover:bg-[hsla(81,100%,60%,1)] rounded-xl md:py-6 md:text-base group transition-all duration-300 whitespace-nowrap"
+                >
+                  {isSubmitting
+                    ? "..."
+                    : isSuccess
+                    ? "Thanks!"
+                    : "Join waitlist"}
+                  {!isSubmitting && !isSuccess && (
+                    <MoveRight className="ml-1 group-hover:translate-x-1 transition-transform" />
+                  )}
+                </Button>
+              </div>
             </form>
           </div>
         </div>
@@ -142,9 +144,9 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-4xl md:max-w-7xl px-4 md:px-12 py-10">
+      <div className="w-full max-w-4xl md:max-w-7xl px-4 md:px-12">
         <Separator />
-        <div className="flex flex-row items-center justify-between py-4 text-[8px] md:text-sm md:py-6">
+        <div className="flex flex-row items-center justify-between py-4 text-[8px] md:text-sm md:py-6 md:pt-3">
           <div className="md:flex md:items-center">
             <span>©2025 Stryker Interactive Technologies Pvt Ltd.</span>
             <span className="hidden md:inline md:mx-2">|</span>
