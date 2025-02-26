@@ -9,6 +9,7 @@ import Image from "next/image";
 import React, { useRef, useState } from "react";
 import { FaDiscord } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import confetti from "canvas-confetti";
 
 const Page = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -38,6 +39,35 @@ const Page = () => {
       console.log("response", response);
       setIsSuccess(true);
       setEmail("");
+      const end = Date.now() + 1.5 * 1000; // 3 seconds
+      const frame = () => {
+        const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
+        if (Date.now() > end) return;
+
+        confetti({
+          particleCount: 2,
+          angle: 60,
+          spread: 55,
+          startVelocity: 60,
+          origin: { x: 0, y: 0.5 },
+          colors: colors,
+        });
+        confetti({
+          particleCount: 2,
+          angle: 120,
+          spread: 55,
+          startVelocity: 60,
+          origin: { x: 1, y: 0.5 },
+          colors: colors,
+        });
+
+        requestAnimationFrame(frame);
+      };
+      frame();
+      setTimeout(() => {
+        setIsSuccess(false);
+        setIsSubmitting(false);
+      }, 3000);
     } catch (error) {
       console.error("Error submitting form", error);
     } finally {
