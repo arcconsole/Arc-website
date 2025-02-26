@@ -59,7 +59,9 @@ const config: Config = {
 			fontFamily: {
 				'poppins': 'var(--font-poppins)',
 				'poppins-medium': 'var(--font-poppins-medium)',
-				'ethnocentric': 'var(--font-ethnocentric)'
+				'ethnocentric': 'var(--font-ethnocentric)',
+				'gilmer-light': 'var(--font-gilmer-light)',
+				'gilmer': 'var(--font-gilmer-regular)'
 			},
 		}
 	},

@@ -91,3 +91,14 @@ body {
   border-radius: 0.5rem;
   border: 3px solid #979797;
 }
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
