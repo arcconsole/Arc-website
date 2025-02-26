@@ -13,7 +13,6 @@ import confetti from "canvas-confetti";
 
 const Page = () => {
   const formRef = useRef<HTMLFormElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -76,57 +75,14 @@ const Page = () => {
     }
   };
 
-  // Improved video playback logic
-  React.useEffect(() => {
-    const playVideo = async () => {
-      if (videoRef.current) {
-        try {
-          // Ensure video is muted initially for autoplay policy
-          videoRef.current.muted = true;
-          // Try to play the video
-          await videoRef.current.play();
-
-          // Optional: Unmute after a slight delay if needed
-          setTimeout(() => {
-            if (videoRef.current) videoRef.current.muted = false;
-          }, 1000);
-        } catch (error) {
-          console.error("Error playing video:", error);
-        }
-      }
-    };
-
-    playVideo();
-
-    // Add click event to the document to enable video with user interaction
-    const handleUserInteraction = () => {
-      if (videoRef.current) {
-        videoRef.current
-          .play()
-          .catch((error) =>
-            console.error("Error playing video after interaction:", error)
-          );
-      }
-    };
-
-    document.addEventListener("click", handleUserInteraction, { once: true });
-
-    return () => {
-      document.removeEventListener("click", handleUserInteraction);
-    };
-  }, []);
-
   return (
     <div className="bg-black text-[hsla(0,0%,66%,1)] min-h-dvh flex flex-col items-center justify-between">
       <div className="relative w-full">
         <div className="relative">
           <video
-            ref={videoRef}
             autoPlay
             loop
             muted
-            playsInline
-            preload="auto"
             src="/Sequence 01_2.mp4"
             className="h-[82vh] md:h-[90vh] w-full object-cover max-sm:rounded-b-xl"
           ></video>
