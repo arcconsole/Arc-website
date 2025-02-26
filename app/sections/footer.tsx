@@ -71,9 +71,19 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="px-8 w-full ">
-      <div className="bg-[#161616] w-full rounded-t-3xl flex justify-between items-center p-5">
-        <div className="p-4 pt-8">
+    <footer className="px-4 md:px-8 w-full">
+      <div className="bg-[#161616] w-full rounded-t-3xl flex flex-col md:flex-row md:justify-between justify-center items-center p-4 md:p-5">
+        <div className="p-4 pt-6 md:pt-8 md:hidden flex justify-center w-full">
+          <Image
+            src={"/arc-logo-white.png"}
+            height={45}
+            width={90}
+            alt="ARC Logo"
+            className="cursor-pointer object-contain"
+          ></Image>
+        </div>
+
+        <div className="p-4 pt-8 hidden md:block">
           <Image
             src={"/arc-logo-white.png"}
             height={50}
@@ -83,7 +93,7 @@ const Footer = () => {
           ></Image>
         </div>
 
-        <div className="py-10 grid grid-flow-col grid-rows-2 gap-3 gap-x-24 font-poppins items-center justify-center">
+        <div className="py-6 md:py-10 md:grid grid-flow-col grid-rows-2 gap-3 gap-x-24 font-poppins items-center justify-center hidden">
           {otherLinks.map((link, index) => (
             <Link
               key={index}
@@ -94,8 +104,9 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-        <div className="flex flex-col gap-5 items-end justify-center text-white">
-          <div className="flex  space-x-5">
+
+        <div className="flex flex-col gap-4 md:gap-5 items-center md:items-end justify-center text-white w-full md:w-auto py-2">
+          <div className="flex space-x-6 md:space-x-5">
             {socials.map((social, index) => (
               <Link
                 key={index}
@@ -107,7 +118,7 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-          <p className="text-right font-poppins">
+          <p className="text-center md:text-right font-poppins text-sm md:text-base max-md:mt-4">
             @2025 Arc Console <br /> Stryker Interactive Technologies Pvt Ltd
             <br />
             All rights reserved.

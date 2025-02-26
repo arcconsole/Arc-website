@@ -34,3 +34,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+# Responsive Typography and Image Sizing
+
+## Desktop View (md and above)
+- **h1 (Title):** `md:text-4xl`
+- **p (Paragraphs):** `md:text-xl`
+- **h1 (Marquee Text):** `md:text-xl`
+- **Image Height in Marquee:** `md:h-12`
+
+## Mobile View (default)
+- **h1 (Title):** `text-3xl`
+- **p (Paragraphs):** `text-base`
+- **h1 (Marquee Text):** `text-lg`
+- **Image Height in Marquee:** `h-8`

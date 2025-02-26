@@ -42,11 +42,11 @@ const AdditionalFetures = () => {
   ];
   return (
     <div className="flex flex-col justify-center items-center relative">
-      <div className="flex max-sm:flex-wrap gap-8 text-black justify-center items-center w-full md:max-w-7xl text-sm absolute top-10">
+      <div className="flex flex-wrap lg:flex-nowrap gap-8 text-black justify-center md:items-center items-start w-full md:max-w-7xl text-sm md:absolute md:top-10 max-md:mt-16">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col gap-4 items-center justify-center w-1/6 sm:w-1/3 lg:w-1/6"
+            className="flex flex-col gap-4 items-center justify-center max-sm:w-[30%] w-1/6"
           >
             {feature.icon}
 

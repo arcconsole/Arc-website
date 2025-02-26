@@ -11,8 +11,10 @@ export default function Home() {
       <NavBar />
       <Hero />
       <ProductIntro />
-      <ProductFeatures />
-      <AdditionalFetures />
+      <div className="flex md:flex-col flex-col-reverse">
+        <ProductFeatures />
+        <AdditionalFetures />
+      </div>
       <Footer />
     </div>
   );
