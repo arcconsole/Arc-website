@@ -83,6 +83,7 @@ const Page = () => {
             autoPlay
             loop
             muted
+            playsInline
             src="/Sequence 01_2.mp4"
             className="h-[82vh] md:h-[90vh] w-full object-cover max-sm:rounded-b-xl"
           ></video>
