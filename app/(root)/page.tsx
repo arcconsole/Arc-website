@@ -94,8 +94,8 @@ const Page = () => {
             Join the Waitlist 
           </h2>
           <p className="text-center md:text-center text-[hsla(0,0%,66%,1)] font-gilmer mb-4 text-lg md:text-2xl leading-tight md:leading-relaxed md:max-w-xl">
-           Be among the first to witness the next step in evolution. Receive first-hand updates and limited-edition previews.
-                  Stay tuned for the extraordinary.
+           Be among the first to witness the next step in evolution. Receive first-hand updates. 
+            Stay tuned for the extraordinary.
           </p>
           <div className="w-full px-2 mt-2 md:px-0 md:mt-4">
             <form
