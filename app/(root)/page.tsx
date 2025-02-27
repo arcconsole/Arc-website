@@ -91,11 +91,11 @@ const Page = () => {
 
         <div className="flex flex-col items-center bg-transparent text-white rounded-lg px-4 w-full max-w-md mx-auto absolute bottom-6 md:bottom-[20%] md:translate-y-1/2 md:left-1/2 md:-translate-x-1/2 md:items-center md:max-w-xl md:text-center">
           <h2 className="text-3xl md:text-5xl font-gilmer mb-2 md:mb-4">
-            Get early access
+            Join the Waitlist 
           </h2>
           <p className="text-center md:text-center text-[hsla(0,0%,66%,1)] font-gilmer mb-4 text-lg md:text-2xl leading-tight md:leading-relaxed md:max-w-xl">
-            Be amongst the first to experience wait and launch a viral waitlist.
-            Signup to be notified when we launch.
+           Be among the first to witness the next step in evolution. Receive first-hand updates and limited-edition previews.
+            Stay tuned for the extraordinary.
           </p>
           <div className="w-full px-2 mt-2 md:px-0 md:mt-4">
             <form
