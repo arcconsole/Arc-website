@@ -149,7 +149,7 @@ const Page = () => {
         <Separator />
         <div className="flex flex-row items-center justify-between py-4 text-[8px] md:text-sm md:py-6 md:pt-3">
           <div className="md:flex md:items-center">
-            <span>©2025 Stryker Interactive Technologies Pvt Ltd.</span>
+            <span>©2025 </span>
             <span className="hidden md:inline md:mx-2">|</span>
             <span>All rights reserved.</span>
           </div>
