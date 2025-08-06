@@ -9,7 +9,7 @@ export const metadata = {
 export default function PrivacyPage() {
   return (
     <main className="prose prose-invert mx-auto py-12">
-      <h1>Privacy Policy</h1>
+      <h1><strong>Privacy Policy</strong></h1>
       <p><strong>Last updated:</strong> July 2025</p>
 
       <section>
@@ -19,8 +19,8 @@ export default function PrivacyPage() {
       </section>
 
       <section>
-        <h2>Information We Collect</h2>
-        <h3>Information You Provide Directly</h3>
+        <h2><strong>Information We Collect</strong></h2>
+        <h3><strong>Information You Provide Directly</strong></h3>
         <ul>
           <li>1.Name, email address, and contact information</li>
           <li>2.Billing and shipping addresses</li>
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
           <li>7.Newsletter subscriptions and marketing preferences</li>
         </ul>
 
-        <h3>Automatically Collected Information</h3>
+        <h3><strong>Automatically Collected Information</strong></h3>
         <ul>
           <li>1.Device information (console serial numbers, hardware specifications)</li>
           <li>2.Usage data and gaming statistics</li>
@@ -40,7 +40,7 @@ export default function PrivacyPage() {
           <li>5.Website navigation patterns</li>
         </ul>
 
-        <h3>Gaming and Performance Data</h3>
+        <h3><strong>Gaming and Performance Data</strong></h3>
         <ul>
           <li>1.Game usage statistics and performance metrics</li>
           <li>2.Console diagnostic information</li>
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
       </section>
 
       <section>
-        <h2>How We Use Your Information</h2>
+        <h2><strong>How We Use Your Information</strong></h2>
         <ul>
           <li>1.Process and fulfill your orders</li>
           <li>2.Provide customer support and technical assistance</li>
@@ -64,10 +64,10 @@ export default function PrivacyPage() {
       </section>
 
       <section>
-        <h2>Information Sharing and Disclosure</h2>
+        <h2><strong>Information Sharing and Disclosure</strong></h2>
         <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except in the following circumstances:</p>
 
-        <h3>Service Providers</h3>
+        <h3><strong>Service Providers</strong></h3>
         <p>We may share information with trusted third-party service providers who assist us in:</p>
         <ul>
           <li>1.Payment processing</li>
@@ -77,7 +77,7 @@ export default function PrivacyPage() {
           <li>5.Marketing communications</li>
         </ul>
 
-        <h3>Legal Requirements</h3>
+        <h3><strong>Legal Requirements</strong></h3>
         <p>We may disclose your information when required by law or to:</p>
         <ul>
           <li>1.Comply with legal processes</li>
@@ -86,12 +86,12 @@ export default function PrivacyPage() {
           <li>4.Prevent fraud or illegal activities</li>
         </ul>
 
-        <h3>Business Transfers</h3>
+        <h3><strong>Business Transfers</strong></h3>
         <p>In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the business transaction.</p>
       </section>
 
       <section>
-        <h2>Data Security</h2>
+        <h2><strong>Data Security</strong></h2>
         <ul>
           <li>1.SSL encryption for data transmission</li>
           <li>2.Secure servers and data storage</li>
@@ -102,7 +102,7 @@ export default function PrivacyPage() {
       </section>
 
       <section>
-        <h2>Your Rights and Choices</h2>
+        <h2><strong>Your Rights and Choices</strong></h2>
         <p>You have the right to:</p>
         <ul>
           <li>1.Access and review your personal information</li>
@@ -116,15 +116,15 @@ export default function PrivacyPage() {
       </section>
 
       <section>
-        <h2>Cookies and Tracking</h2>
-        <p>Our website uses cookies and similar technologies to:</p>
+        <h2><strong>Cookies and Tracking</strong></h2>
+        <p><strong>Our website uses cookies and similar technologies to:</strong></p>
         <ul>
           <li>1.Remember your preferences and settings</li>
           <li>2.Analyze website traffic and usage</li>
           <li>3.Provide personalized content</li>
           <li>4.Enable social media features</li>
         </ul>
-        <p>You can control cookie settings through your browser preferences.</p>
+        <p><strong>You can control cookie settings through your browser preferences.</strong></p>
       </section>
 
       <section>
@@ -138,21 +138,21 @@ export default function PrivacyPage() {
       </section>
 
       <section>
-        <h2>International Data Transfers</h2>
+        <h2><strong>International Data Transfers</strong></h2>
         <p>Your information may be transferred and stored in countries other than your own. We ensure appropriate safeguards are in place to protect your data during international transfers.</p>
       </section>
 
       <section>
-        <h2>Changes to This Privacy Policy</h2>
+        <h2><strong>Changes to This Privacy Policy</strong></h2>
         <p>We may update this Privacy Policy periodically. We will notify you of any material changes by posting the updated policy on our website and updating the &quot;Last updated&quot; date.</p>
       </section>
 
       <section>
-        <h2>Contact Us</h2>
+        <h2><strong>Contact Us</strong></h2>
         <p>
           If you have any questions about this Privacy Policy or our data practices, please contact us:<br />
           <strong>Email:</strong> <a href="mailto:support@arcconsoles.com">privacy@arcconsoles.com</a><br />
-          <strong>Address:</strong> zenali innovative technologies, trivandrum
+          <strong>Address:</strong> Zenali Innovative Technologies, trivandrum
         </p>
       </section>
     </main>
