@@ -10,7 +10,7 @@ export default function TermsPage() {
     <main className="prose prose-invert mx-auto py-12">
       <h1>Terms of Service</h1>
       <p>
-        <strong>Last updated:</strong> January 2025
+        <strong>Last updated:</strong> July 2025
       </p>
 
       <section>
@@ -182,9 +182,9 @@ export default function TermsPage() {
       <section>
         <h2>11. Governing Law</h2>
         <p>
-          These Terms are governed by [Your State/Country] law, without regard
+          These Terms are governed by Indian law, without regard
           to conflict of law principles. Any disputes will be resolved in the
-          courts of [Your Jurisdiction].
+          courts of Kerala.
         </p>
       </section>
 
@@ -212,7 +212,7 @@ export default function TermsPage() {
           For questions about these Terms of Service, please contact us:
           <br />
           <strong>Email:</strong>{' '}
-          <a href="mailto:legal@arcconsoles.com">
+          <a href="mailto:support@arcconsoles.com">
             legal@arcconsoles.com
           </a>
           <br />
