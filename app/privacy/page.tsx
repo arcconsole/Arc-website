@@ -1,4 +1,5 @@
 // app/privacy/page.tsx
+
 import React from 'react';
 
 export const metadata = {
@@ -13,7 +14,10 @@ export default function PrivacyPage() {
 
       <section>
         <p>
-          At Arc Consoles, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website, purchase our products, or use our services. 
+          At Arc Consoles, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website, purchase our products, or use our services.
+        </p>
+      </section>
+
       <section>
         <h2>Information We Collect</h2>
         <h3>Information You Provide Directly</h3>
@@ -62,6 +66,7 @@ export default function PrivacyPage() {
       <section>
         <h2>Information Sharing and Disclosure</h2>
         <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except in the following circumstances:</p>
+
         <h3>Service Providers</h3>
         <p>We may share information with trusted third-party service providers who assist us in:</p>
         <ul>
@@ -71,6 +76,7 @@ export default function PrivacyPage() {
           <li>Website analytics</li>
           <li>Marketing communications</li>
         </ul>
+
         <h3>Legal Requirements</h3>
         <p>We may disclose your information when required by law or to:</p>
         <ul>
@@ -79,6 +85,7 @@ export default function PrivacyPage() {
           <li>Ensure user safety</li>
           <li>Prevent fraud or illegal activities</li>
         </ul>
+
         <h3>Business Transfers</h3>
         <p>In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the business transaction.</p>
       </section>
