@@ -46,7 +46,7 @@ const Footer = () => {
     },
     {
       name: "Terms of use",
-      link: "/term",
+      link: "/terms",
     },
     {
       name: "code of conduct",
