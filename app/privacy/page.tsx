@@ -22,44 +22,44 @@ export default function PrivacyPage() {
         <h2>Information We Collect</h2>
         <h3>Information You Provide Directly</h3>
         <ul>
-          <li>Name, email address, and contact information</li>
-          <li>Billing and shipping addresses</li>
-          <li>Payment information (processed securely through third-party processors)</li>
-          <li>Account registration details</li>
-          <li>Customer service communications</li>
-          <li>Product reviews and feedback</li>
-          <li>Newsletter subscriptions and marketing preferences</li>
+          <li>1.Name, email address, and contact information</li>
+          <li>2.Billing and shipping addresses</li>
+          <li>3.Payment information (processed securely through third-party processors)</li>
+          <li>4.Account registration details</li>
+          <li>5.Customer service communications</li>
+          <li>6.Product reviews and feedback</li>
+          <li>7.Newsletter subscriptions and marketing preferences</li>
         </ul>
 
         <h3>Automatically Collected Information</h3>
         <ul>
-          <li>Device information (console serial numbers, hardware specifications)</li>
-          <li>Usage data and gaming statistics</li>
-          <li>IP address and browser information</li>
-          <li>Cookies and similar tracking technologies</li>
-          <li>Website navigation patterns</li>
+          <li>1.Device information (console serial numbers, hardware specifications)</li>
+          <li>2.Usage data and gaming statistics</li>
+          <li>3.IP address and browser information</li>
+          <li>4.Cookies and similar tracking technologies</li>
+          <li>5.Website navigation patterns</li>
         </ul>
 
         <h3>Gaming and Performance Data</h3>
         <ul>
-          <li>Game usage statistics and performance metrics</li>
-          <li>Console diagnostic information</li>
-          <li>Software update and installation data</li>
-          <li>Online gaming activity (when applicable)</li>
+          <li>1.Game usage statistics and performance metrics</li>
+          <li>2.Console diagnostic information</li>
+          <li>3.Software update and installation data</li>
+          <li>4.Online gaming activity (when applicable)</li>
         </ul>
       </section>
 
       <section>
         <h2>How We Use Your Information</h2>
         <ul>
-          <li>Process and fulfill your orders</li>
-          <li>Provide customer support and technical assistance</li>
-          <li>Improve our products and gaming experience</li>
-          <li>Send important updates about your console or services</li>
-          <li>Communicate promotional offers (with your consent)</li>
-          <li>Ensure product security and prevent fraud</li>
-          <li>Comply with legal obligations</li>
-          <li>Analyze usage patterns to enhance our services</li>
+          <li>1.Process and fulfill your orders</li>
+          <li>2.Provide customer support and technical assistance</li>
+          <li>3.Improve our products and gaming experience</li>
+          <li>4.Send important updates about your console or services</li>
+          <li>5.Communicate promotional offers (with your consent)</li>
+          <li>6.Ensure product security and prevent fraud</li>
+          <li>7.Comply with legal obligations</li>
+          <li>8.Analyze usage patterns to enhance our services</li>
         </ul>
       </section>
 
@@ -70,20 +70,20 @@ export default function PrivacyPage() {
         <h3>Service Providers</h3>
         <p>We may share information with trusted third-party service providers who assist us in:</p>
         <ul>
-          <li>Payment processing</li>
-          <li>Shipping and logistics</li>
-          <li>Customer support</li>
-          <li>Website analytics</li>
-          <li>Marketing communications</li>
+          <li>1.Payment processing</li>
+          <li>2.Shipping and logistics</li>
+          <li>3.Customer support</li>
+          <li>4.Website analytics</li>
+          <li>5.Marketing communications</li>
         </ul>
 
         <h3>Legal Requirements</h3>
         <p>We may disclose your information when required by law or to:</p>
         <ul>
-          <li>Comply with legal processes</li>
-          <li>Protect our rights and property</li>
-          <li>Ensure user safety</li>
-          <li>Prevent fraud or illegal activities</li>
+          <li>1.Comply with legal processes</li>
+          <li>2.Protect our rights and property</li>
+          <li>3.Ensure user safety</li>
+          <li>4.Prevent fraud or illegal activities</li>
         </ul>
 
         <h3>Business Transfers</h3>
@@ -93,11 +93,11 @@ export default function PrivacyPage() {
       <section>
         <h2>Data Security</h2>
         <ul>
-          <li>SSL encryption for data transmission</li>
-          <li>Secure servers and data storage</li>
-          <li>Regular security audits and updates</li>
-          <li>Access controls and employee training</li>
-          <li>Industry-standard payment processing security</li>
+          <li>1.SSL encryption for data transmission</li>
+          <li>2.Secure servers and data storage</li>
+          <li>3.Regular security audits and updates</li>
+          <li>4.Access controls and employee training</li>
+          <li>5.Industry-standard payment processing security</li>
         </ul>
       </section>
 
@@ -105,12 +105,12 @@ export default function PrivacyPage() {
         <h2>Your Rights and Choices</h2>
         <p>You have the right to:</p>
         <ul>
-          <li>Access and review your personal information</li>
-          <li>Correct or update inaccurate data</li>
+          <li>1.Access and review your personal information</li>
+          <li>2.Correct or update inaccurate data</li>
           <li>Request deletion of your account and data</li>
-          <li>Opt-out of marketing communications</li>
-          <li>Control cookie preferences</li>
-          <li>Request data portability</li>
+          <li>3.Opt-out of marketing communications</li>
+          <li>4.Control cookie preferences</li>
+          <li>5.Request data portability</li>
         </ul>
         <p>To exercise these rights, contact us at <a href="mailto:support@arcconsoles.com">privacy@arcconsoles.com</a>.</p>
       </section>
@@ -119,10 +119,10 @@ export default function PrivacyPage() {
         <h2>Cookies and Tracking</h2>
         <p>Our website uses cookies and similar technologies to:</p>
         <ul>
-          <li>Remember your preferences and settings</li>
-          <li>Analyze website traffic and usage</li>
-          <li>Provide personalized content</li>
-          <li>Enable social media features</li>
+          <li>1.Remember your preferences and settings</li>
+          <li>2.Analyze website traffic and usage</li>
+          <li>3.Provide personalized content</li>
+          <li>4.Enable social media features</li>
         </ul>
         <p>You can control cookie settings through your browser preferences.</p>
       </section>
