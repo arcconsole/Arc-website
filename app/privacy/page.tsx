@@ -10,7 +10,7 @@ export default function PrivacyPage() {
   return (
     <main className="prose prose-invert mx-auto py-12">
       <h1>Privacy Policy</h1>
-      <p><strong>Last updated:</strong> January 2025</p>
+      <p><strong>Last updated:</strong> July 2025</p>
 
       <section>
         <p>
@@ -112,7 +112,7 @@ export default function PrivacyPage() {
           <li>Control cookie preferences</li>
           <li>Request data portability</li>
         </ul>
-        <p>To exercise these rights, contact us at <a href="mailto:privacy@arcconsoles.com">privacy@arcconsoles.com</a>.</p>
+        <p>To exercise these rights, contact us at <a href="mailto:support@arcconsoles.com">privacy@arcconsoles.com</a>.</p>
       </section>
 
       <section>
@@ -151,8 +151,8 @@ export default function PrivacyPage() {
         <h2>Contact Us</h2>
         <p>
           If you have any questions about this Privacy Policy or our data practices, please contact us:<br />
-          <strong>Email:</strong> <a href="mailto:privacy@arcconsoles.com">privacy@arcconsoles.com</a><br />
-          <strong>Address:</strong> Arc Consoles Privacy Team
+          <strong>Email:</strong> <a href="mailto:support@arcconsoles.com">privacy@arcconsoles.com</a><br />
+          <strong>Address:</strong> zenali innovative technologies, trivandrum
         </p>
       </section>
     </main>
