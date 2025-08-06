@@ -38,7 +38,7 @@ const Footer = () => {
   const otherLinks = [
     {
       name: "home",
-      link: "/privacy",
+      link: "/",
     },
     {
       name: "privacy ",
