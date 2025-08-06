@@ -13,10 +13,7 @@ export default function PrivacyPage() {
 
       <section>
         <p>
-          At Arc Consoles, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website, purchase our products, or use our services. :contentReference[oaicite:1]{index=1}
-        </p>
-      </section>
-
+          At Arc Consoles, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website, purchase our products, or use our services. 
       <section>
         <h2>Information We Collect</h2>
         <h3>Information You Provide Directly</h3>
