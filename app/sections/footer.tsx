@@ -46,7 +46,7 @@ const Footer = () => {
     },
     {
       name: "Terms of use",
-      link: "/terms",
+      link: "/terms.tsx",
     },
     {
       name: "code of conduct",
