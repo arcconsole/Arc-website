@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
       <motion.div className="flex items-center justify-center w-full h-full">
         <div className="absolute top-1/2 left-1/2 -translate-x-[28%] -translate-y-[28%] w-full font-ethnocentric text-[4rem] sm:text-[6rem] md:text-[9rem] text-[#DEDEDE] z-[-1] hidden sm:block">
-          arc nemo
+          ARC X1
         </div>
         <div className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full font-ethnocentric text-[4rem] text-center text-[#DEDEDE] z-[-1] sm:hidden">
           arc
