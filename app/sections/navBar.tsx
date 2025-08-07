@@ -45,12 +45,12 @@ export default function NavBar() {
           ></Image>
           <span className="sr-only">Acme Inc</span>
         </Link>
-        <nav className="hidden border-2 border-[#979797] items-center gap-6 text-sm font-medium md:flex bg-gradient-to-tr from-[#E8E8E8] to-[#D1D1D1] rounded-2xl p-3 px-24 space-x-8">
+        <nav className="hidden border-2 border-[#979797] items-center gap-3 lg:gap-6 text-sm font-medium lg:flex bg-gradient-to-tr from-[#E8E8E8] to-[#D1D1D1] rounded-2xl p-2 lg:p-3 px-8 lg:px-24 space-x-4 lg:space-x-8">
           {links.map((link) => (
             <Link
               key={link}
               href="#"
-              className="hover:text-gray-900 text-black font-poppins text-base"
+              className="hover:text-gray-900 text-black font-poppins text-sm lg:text-base whitespace-nowrap"
               prefetch={false}
             >
               {link}
@@ -60,9 +60,12 @@ export default function NavBar() {
         <Button
           onClick={() => setIsOpen(true)}
           variant={"outline"}
-          className="rounded-[1.2rem] capitalize text-xl py-6 border-2 text-black border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
+          className="rounded-[1.2rem] capitalize text-base lg:text-xl py-4 lg:py-6 px-3 lg:px-4 border-2 text-black border-[#161616] hover:bg-[#161616] hover:text-white font-poppins"
         >
-          Join the tribe <MoveUpRight size={36} />
+          <span className="hidden sm:inline">Join the tribe</span>
+          <span className="sm:hidden">Join</span>
+          <MoveUpRight size={24} className="lg:hidden" />
+          <MoveUpRight size={36} className="hidden lg:block" />
         </Button>
       </div>
       <WaitlistDialog isOpen={isOpen} setIsOpen={setIsOpen} />
