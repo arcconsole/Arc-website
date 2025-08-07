@@ -16,16 +16,16 @@ const ProductIntro = () => {
     <div className="space-y-14 md:space-y-20 px-4 md:px-0">
       <div className="container max-md:text-center max-w-7xl bg-[#161616] text-white mx-auto rounded-xl md:rounded-3xl p-6 md:p-20 md:py-24 py-12 md:pl-24 flex flex-col md:flex-row justify-between md:gap-32">
         <div className="space-y-6 md:space-y-16 w-full md:w-3/4">
-          <h1 className="font-ethnocentric text-3xl md:text-4xl">arc nemo</h1>
+          <h1 className="font-ethnocentric text-3xl md:text-4xl">ARC X1</h1>
           <p className="font-poppins text-base md:text-xl leading-relaxed">
             Best-in-class native Android gaming handheld console powered by
             <strong className="font-poppins-medium mx-1">
-              Snapdragon 8Gen2
+              Snapdragon G2Gen2
             </strong>
             , built for gamers who demand nothing short of excellence.
           </p>
           <p className="font-poppins text-base md:text-xl leading-relaxed">
-            Integrating cutting-edge hardware with intuitive design to deliver
+            Integrating cutting-edge hardware with an intuitive design to deliver
             an unmatched portable gaming experience where premium craftsmanship
             meets limitless possibilities.
           </p>
